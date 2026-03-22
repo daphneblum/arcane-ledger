@@ -30,10 +30,11 @@ body {
 
 .calculator-grid > button {
     cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border: 2px solid #5a3a22;
     outline: none;
-    background-color: rgba(255, 255, 255);
+    background-color: #d8c7a1;
+    color: #2a1a12
 }
 
 .calculator-grid > button:hover {
