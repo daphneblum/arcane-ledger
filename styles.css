@@ -50,6 +50,7 @@ body {
     background-color: #d8c7a1;
     color: #2a1a12;
     box-shadow: 2px 2px 0 #3b2417;
+    cursor: url('images/wand.png') 0 0, auto;
 }
 
 .calculator-grid > button:hover {
@@ -58,6 +59,7 @@ body {
 
 .calculator-grid > button:active {
     box-shadow: inset 2px 2px 0 #3b2417;
+    cursor: url('images/wand2.png') 0 0, auto;
 }
 
 .span-two {
