@@ -1,7 +1,8 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Press Start 2P', system-ui;
   font-weight: normal;
+  font-style: normal;
 }
 
 body {
