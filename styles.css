@@ -12,6 +12,18 @@ body {
   background-size: cover;
 }
 
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #e8d9a3;
+    margin-top: 40px;
+    text-shadow: 
+        2px 2px 0 #000,
+        0 0 15px rgba(255, 200, 50, 0.8),
+        0 0 30px rgba(255, 140, 0, 0.5);
+}
+
 .calculator-wrapper {
     display: flex;
     justify-content: center;
@@ -25,7 +37,9 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     border-radius: 0;
     border: 4px solid #3b2417;
-    box-shadow: 6px 6px 0 #1e120c;
+    outline: 2px solid #1e120c;
+    box-shadow: 6px 6px 0 #1e120c,
+                0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .calculator-grid > button {
@@ -34,11 +48,16 @@ body {
     border: 2px solid #5a3a22;
     outline: none;
     background-color: #d8c7a1;
-    color: #2a1a12
+    color: #2a1a12;
+    box-shadow: 2px 2px 0 #3b2417;
 }
 
 .calculator-grid > button:hover {
     background-color: rgb(205, 205, 201);
+}
+
+.calculator-grid > button:active {
+    box-shadow: inset 2px 2px 0 #3b2417;
 }
 
 .span-two {
@@ -47,6 +66,9 @@ body {
 
 .output {
     grid-column: 1 / -1;
+    background: linear-gradient(#0f0f0f, #1a1a1a);
+    color: #e8e2c8;
+    text-shadow: 0 0 6px rgba(255, 230, 150, 0.5);
     background-color: rgba(0, 0, 0);
     display: flex;
     align-items: flex-end;
@@ -58,11 +80,37 @@ body {
 }
 
 .output .previous-operand {
+    /* mystical glow - purple */
+    /* color: rgba(180, 160, 255, 0.75);
+    font-size: 1.5rem;
+    text-shadow:
+        0 0 6px rgba(150, 100, 255, 0.7),
+        0 0 15px rgba(100, 50, 255, 0.4); */
+    
+    /* warm glow - yellow */
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.5rem;
+    text-shadow: 
+        2px 2px 0 #000,
+        0 0 15px rgba(255, 200, 50, 0.8),
+        0 0 30px rgba(255, 140, 0, 0.5);
 }
 
 .output .current-operand {
-    color: rgba(255, 255, 255, 0.75);
+    /* mystical glow - purple */
+    /* color: rgba(200, 180, 255, 0.95);
     font-size: 2.5rem;
+    text-shadow: 
+        0 0 8px rgba(180, 130, 255, 0.9),
+        0 0 20px rgba(130, 80, 255, 0.6),
+        0 0 40px rgba(80, 0, 255, 0.3); */
+
+    /* warm glow - yellow */
+    color: rgba(255, 230, 150, 0.95);
+    font-size: 2.5rem;
+    text-shadow: 
+        0 0 8px rgba(255, 200, 50, 0.9),
+        0 0 20px rgba(255, 160, 0, 0.6),
+        0 0 40px rgba(255, 100, 0, 0.3);
+
 }
