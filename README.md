@@ -1,2 +1,3 @@
 This calculator is based on a tutorial by Web Dev Simplified on YouTube: https://www.youtube.com/watch?v=j59qQ7YWLxw
 
+![Screenshot of base Calculator](<images/Screenshot 2026-03-21 at 10.01.49 PM.png>)
