@@ -60,13 +60,19 @@ Calculator Logic
 The app uses an object-oriented Calculator class with the following responsibilities:
 Method                                              Description
 ____________________________________________________________________________________________________________________________________________________________________________
-clear()                                         Resets both operands and the stored operation
-delete()                                        Slices the last character from the current operand
-appendNumber(number)                            Appends a digit or decimal; guards against duplicate .
-chooseOperation(operation)                      Stores the operator; auto-computes if a previous operand already exists
-compute()                                       Evaluates the stored expression using parseFloat; no-ops on invalid inputget
-DisplayNumber(number)                           Formats integers with toLocaleString while preserving decimal digits
-updateDisplay()                                 Writes formatted values to the two output div elements
+clear()         -                                Resets both operands and the stored operation
+
+delete()                  -                      Slices the last character from the current operand
+
+appendNumber(number)      -                      Appends a digit or decimal; guards against duplicate .
+
+chooseOperation(operation)      -                Stores the operator; auto-computes if a previous operand already exists
+
+compute()                -                       Evaluates the stored expression using parseFloat; no-ops on invalid inputget
+
+DisplayNumber(number)         -                  Formats integers with toLocaleString while preserving decimal digits
+
+updateDisplay()            -                     Writes formatted values to the two output div elements
 
 Event listeners are attached to all button groups ([data-number], [data-operation], [data-equals], [data-delete], [data-all-clear]) and call updateDisplay() after every interaction.
 
@@ -74,8 +80,11 @@ Particle System
 The particle system runs entirely in vanilla JS and CSS with no canvas or external library.
 
 createParticles() spawns 50 particles staggered 300ms apart to avoid a simultaneous burst on load
+
 spawnParticle() creates a div with the .dust-particle class, randomizes its horizontal position (left: 0–100vw), size (2–6px), animation duration (8–18s), and delay (0–5s), then appends it to the body
+
 Each particle listens for animationend — when it fires, the particle is removed from the DOM and spawnParticle() is called again, keeping the screen populated without accumulating unused elements
+
 The floatUp CSS keyframe animation moves particles from translateY(0) to translateY(-100vh) with a slight horizontal drift and a fade-in/fade-out opacity curve
 
 Theming
